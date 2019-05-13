@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="icon" href="image/favicon.ico">
+    <title>CodeAcademy.com</title>
+
+    <style>
+        * {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        
+        body {
+            background: cadetblue;
+        }
+        
+        form {
+            width: 400px;
+            height: auto;
+            padding: 20px 30px;
+            border-radius: 5px;
+            margin: 50px auto;
+            background: rgb(250, 246, 246);
+        }
+        
+        #other {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .cls {
+            width: 50px;
+            height: 50px;
+            padding: 7px;
+            border: 1px solid lightgray;
+            margin-left: 9px;
+        }
+        
+        input {
+            padding: 10px 15px;
+            width: 95%;
+        }
+        
+        .ps {
+            margin-left: 9px;
+        }
+        
+        .contain {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="">
+        <h3 style="text-align: center; font-weight:bold;">Log In to Codecademy</h3>
+
+        <label class="ps" style="text-align:left; margin-top: 24px;" for="email">Emal..</label><br>
+        <div class="contain">
+            <input required class="ps" type="email" name="" id="email">
+        </div>
+
+        <label class="ps" style="text-align:left; margin-top: 15px;" for="password">Password</label><br>
+        <div class="contain">
+            <input required maxlength="8" class="ps" type="password" name="" id="password">
+        </div>
+        <input onclick="login()" class="ps" value="Login" style=" background:#6400e4; color: white; margin-top: 25px; margin-bottom: 25px;" type="submit" name="">
+
+        <h6 style="text-align: center;">Login with other option</h6>
+
+        <div id="other" style="margin-top:25px;">
+            <img class="cls" src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" alt="">
+            <img class="cls" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" alt="">
+            <img class="cls" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="">
+            <img class="cls" src="https://banner2.kisspng.com/20180326/eye/kisspng-github-computer-icons-logo-github-5ab8a338143da0.8375508315220498480829.jpg" alt="">
+        </div>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        var show = false;
+        // when login button is click inside the login page //
+        function login() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === 'smartlogic8393@gmail.com' && password === '8393') {
+                show = true;
+                localStorage.setItem("firstname", "true");
+                window.close();
+                window.open("index.html");
+
+            } else {
+                alert("Please correct the id or password")
+            }
+
+        }
+    </script>
+</body>
+
+</html>

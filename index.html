@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/favicon.ico">
+    <title>CodeAcademy.com</title>
+</head>
+
+<body>
+
+    <nav class="position-sticky">
+        <ul class="clearfix">
+            <li>
+                <a href="index.html"><img style="object-fit:contain;" width="130px" height="42" src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-7/logo.png" alt=""></a>
+            </li>
+            <li><a id="val1" onclick="onaccesspages(1)" href="#">Download</a></li>
+            <li><a id="val2" onclick="onaccesspages(2)" href="#">Prices</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="profile" style="display: none;" class="float-right"><img style="border-radius:100%; border:1px solid grey;" width="40" height="40" src="https://target.scene7.com/is/image/Target/GUEST_c03fdc36-4c92-45b1-9fa7-c1b11ab62993" alt=""> <span style="padding-left:5px;">Abdul Basit</span> </li>
+            <li id="login" style="margin-top:6px;" class="float-right"><a style="font-weight: bold; color:black;" href="login.html">Login</a></li>
+            <li id="ssss" style="margin-top:6px; background:  #6400e4; color:white; border-radius: 5px;" class="float-right"><button onclick="signup()" style="background: transparent; font-weight: bold; color:white; border:none; transition: none; letter-spacing: 0px;" href="">Sign Up</button></li>
+            <li id="signout" style="margin-top:6px; display: none;" class="float-right"><a onclick="signout_click()" style="font-weight: bold; color:black;" href="#">Sign Out</a></li>
+        </ul>
+    </nav>
+
+
+    <section style="position: relative;">
+        <img id="basits" src="image/title.jpg" alt="">
+        <div class="center">
+            <img src="https://www.vishwainfoways.com/img/php-development.png" alt="">
+        </div>
+    </section>
+
+
+    <section id="popup-head">
+
+        <div class="popup-child">
+            <img style="margin: 0 auto; text-align: center; display: block" width="80" height="80" src="https://image.flaticon.com/icons/png/512/306/306473.png" alt="">
+            <h5 style="text-align:center; margin-bottom: 20px;">Start Programming</h5>
+            <form name="bas">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name..">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input required type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Are you sure?</label>
+                </div>
+                <button href="#" onclick="onsubmittvalue()" type="submit" class="btn btn-outline-info">Sign Up</button>
+                <button onclick="signupclose()" type="submit" class="btn btn-outline-danger">Close</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="second" class="aside" style="margin-top:60px;">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col-2">
+                    <div style="display:flex; flex-direction: column; ">
+                        <img class="cls" src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" alt="">
+                        <img class="cls" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" alt="">
+                        <img class="cls" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="">
+                        <img class="cls" src="https://banner2.kisspng.com/20180326/eye/kisspng-github-computer-icons-logo-github-5ab8a338143da0.8375508315220498480829.jpg" alt="">
+                        <img class="cls" src="https://lh6.ggpht.com/mp86vbELnqLi2FzvhiKdPX31_oiTRLNyeK8x4IIrbF5eD1D5RdnVwjQP0hwMNR_JdA" alt="">
+                        <img class="cls" src="http://www.logospng.com/images/172/gmail-glyph-icon-172435.png" alt="">
+
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img src="https://www.artsfon.com/pic/201410/1280x720/artsfon.com-19671.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn Full HTML</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" id="course1" onclick="select_course()" class="btn btn-primary">Learn now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img src="https://i.ytimg.com/vi/GhfQvpN5k14/maxresdefault.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn Full CSS</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" id="course2" class="btn btn-primary" onclick="select_course()">Learn now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img src="https://www.elevano.com/wp-content/uploads/2018/10/Javascript-Programming-Jobs.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn Full Javascript</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" id="course3" class="btn btn-primary" onclick="select_course()">Learn now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercise" class="container bg-dark ">
+        <h2 style="text-align:center; color: white;">Exercises</h2>
+        <h5 style="text-align:center; color: white;">Test yourself with exercises</h5>
+        <div class="d-flex justify-content-between mt-5">
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">HTML Exercises</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">CSS Exercises</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">JavaScript Exercises</a>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">Java</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">PHP</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">SQL</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">JQuery</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">Python</a>
+            <a href="try.html" class="btn btn-lg btn-info pl-5 pr-5">MYSQL</a>
+        </div>
+
+    </section>
+
+    <section style="background:	#f5f5f5;" id="thems" class="container-fulid mt-4">
+        <h2 style="text-align:center; padding-top: 30px;">Tty Free Web Template</h2>
+        <div class="row">
+            <img style="margin:0 auto; text-align: center; width: 97%; height: auto;" src="https://mediaone.b-cdn.net/wp-content/uploads/2019/01/web-design-mockup.png" alt="">
+        </div>
+    </section>
+
+    <section id="code" class="" style="background:#f8f8ff">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-6">
+                    <h1>Try And Watch Free Codes</h1>
+                    <p style="text-align:center;">Learn programming with thousand of example</p>
+                    <h2 class="mt-5">HTML</h2>
+                    <h2>CSS</h2>
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="col-6 justify-content-center align-items-center pl-5">
+                    <div class="jumbotron p-3">
+                        <h3>Code snape</h3>
+                        <div style="background:white;" class="jumbotron p-3">
+                            <code>
+                                function test() <br>
+                                { <br>
+                                var a,b; <br>
+                                a=window.prompt("Enter first"); <br>
+                                b=window.prompt("Enter second"); <br>
+                                console.log("The Sum = "+(a+b)); <br>
+                                }<br>
+                                <span style="color:blue;">text()</span> // calling function
+                            </code>
+                            <html>
+                            </p>
+                        </div>
+                        <a href="try.html" class="btn btn-lg btn-success pr-4 pl-4">Try Youself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+    <script src="javascript/node.js "></script>
+</body>
+
+</html>
